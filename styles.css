@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp4t1dUltum1JCxEbULx1yEqH4kSxP8IPShyp-GUb8ZOSlEqg9TuPjxvTBCKwFuUgiakUCoel5DA6C4rr1NjCtTcEl8jopwkPVSR-dVMDnttSxzRlbo0SdYCHmPSo73eaRNx1a4UdwqNIM/w1200-h675-p-k-no-nu/MInimalist-landscape-wallpaper-night-moon-desktop-hd.png) no-repeat;
+    background-size: cover;
+}
+
+.clock_outer{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: inset 0 3px 6px #000000, 0 4px 6px #000000;
+    backdrop-filter: blur(15px);
+    transform: rotate(90deg);
+}
+
+.click_needles{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.click_needles:after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px 10px #00000050;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.click_needles span{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 5px;
+    background-color: #ffffff;
+    transform-origin: right;
+    border-radius: 5px;
+}
+
